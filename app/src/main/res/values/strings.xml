@@ -106,7 +106,7 @@
     <string name="phoneConfirm">Enter your phone number to authenticate the payment of your product(s).</string>
     <string name="confirmPayment">Proceed to pay for your products by clicking the Confirm and pay Button.\n</string>
     <string name="data">Sensor Readings</string>
-    <string name="co">Carbon Oxide</string>
+    <string name="co">Carbon Monoxide</string>
     <string name="ethyl">Ethyl Alcohol</string>
     <string name="no">Nitrogen Dioxide</string>
     <string name="voc">Volatile Organic Compounds</string>

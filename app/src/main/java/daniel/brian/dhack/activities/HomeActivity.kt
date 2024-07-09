@@ -33,6 +33,12 @@ class HomeActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        // logout
+        binding.toolBar.setOnClickListener{
+            val intent = Intent(this,MapActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 
     private fun collectData() {
@@ -54,11 +60,11 @@ class HomeActivity : AppCompatActivity() {
                     binding.ethyl.text = ethylAlcohol
                     binding.voc.text = voc
 
-                    if (co > 200.toString()){
-                        binding.overallValue.text = "High levels of Co2 detected"
+                    if (co > 400.toString()){
+                        binding.overallValue.text = "High levels of CO detected"
                         binding.overallValue.setTextColor(ContextCompat.getColor(this@HomeActivity, android.R.color.holo_red_dark))
                     }else{
-                        binding.overallValue.text = "Moderate Co2 levels"
+                        binding.overallValue.text = "Moderate CO levels"
                     }
 
                 } else {
