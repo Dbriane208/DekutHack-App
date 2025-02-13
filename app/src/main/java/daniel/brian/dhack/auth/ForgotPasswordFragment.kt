@@ -53,7 +53,8 @@ class ForgotPasswordFragment : Fragment() {
                     }
 
                     is Resource.Loading -> {
-                        binding.btnResetPassword.startAnimation()
+                        Snackbar.make(requireView(),"Loading...",
+                            Snackbar.LENGTH_LONG).show()
                     }
 
                     is Resource.Success -> {

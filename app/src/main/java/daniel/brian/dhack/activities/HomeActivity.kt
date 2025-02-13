@@ -27,7 +27,7 @@ class HomeActivity : AppCompatActivity() {
 
         // navigating to maps
         binding.btnMap.setOnClickListener {
-            val url = "https://shorturl.at/m8hwX"
+            val url = "https://shorturl.at/gdfkf"
             val intent = Intent(Intent.ACTION_VIEW)
             intent.data = Uri.parse(url)
             startActivity(intent)

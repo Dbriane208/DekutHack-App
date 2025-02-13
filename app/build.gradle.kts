@@ -59,19 +59,13 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
 
     //Navigation
-    implementation ("androidx.fragment:fragment:1.8.1")
-    implementation ("androidx.navigation:navigation-fragment-ktx:2.7.7")
-    implementation ("androidx.navigation:navigation-ui-ktx:2.7.7")
+    implementation ("androidx.fragment:fragment:1.8.6")
+    implementation ("androidx.navigation:navigation-fragment-ktx:2.8.7")
+    implementation ("androidx.navigation:navigation-ui-ktx:2.8.7")
 
     //Dagger hilt
     implementation ("com.google.dagger:hilt-android:2.49")
     kapt("com.google.dagger:hilt-compiler:2.49")
-
-    //viewpager2 indicator
-    implementation("io.github.vejei.viewpagerindicator:viewpagerindicator:1.0.0-alpha.1")
-
-    //loading button
-    implementation("br.com.simplepass:loading-button-android:2.2.0")
 
     // coroutine with firebase
     implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.7.3")

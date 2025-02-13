@@ -89,13 +89,13 @@ class SignUpFragment : Fragment() {
                 when(it){
                     is Resource.Error -> {
                         Snackbar.make(requireView(), "Similar email exists.Try another email!", Snackbar.LENGTH_LONG).show()
-                        binding.btnRegister.revertAnimation()
+
                     }
                     is Resource.Loading ->{
-                        binding.btnRegister.startAnimation()
+                        Snackbar.make(requireView(),"Loading...",
+                            Snackbar.LENGTH_LONG).show()
                     }
-                    is Resource.Success ->{
-                        binding.btnRegister.revertAnimation()
+                    is Resource.Success ->{ 
                         Snackbar.make(requireView(),"Registration Successful!", Snackbar.LENGTH_LONG).show()
                         Intent(requireActivity(), HomeActivity::class.java).also { intent ->
                             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK)
